@@ -3,7 +3,7 @@ description: "Небольшие заметки о разработке, про�
 lang: ru
 timezone: Europe/Moscow
  
-baseurl: "/docs"
+# baseurl: "/docs"
  
 markdown: kramdown
 highlighter: rouge
