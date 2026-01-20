@@ -1,0 +1,25 @@
+title: "Мой блог"
+description: "Небольшие заметки о разработке, продуктах и жизни"
+lang: ru
+timezone: Europe/Moscow
+ 
+baseurl: "/blog-2026"
+ 
+markdown: kramdown
+highlighter: rouge
+ 
+ 
+permalink: /:year/:month/:day/:title/
+ 
+future: true
+ 
+plugins:
+- jekyll-feed
+- jekyll-sitemap
+ 
+# Чтобы не тащить лишнее в сборку
+exclude:
+- node_modules
+- vendor
+- Gemfile
+- Gemfile.lock
