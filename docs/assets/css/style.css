@@ -1,0 +1,105 @@
+:root {
+--bg: #0b1020;
+--panel: #0f172a;
+--text: #e5edff;
+--muted: #9aa8c7;
+--accent: #7aa2ff;
+--link: #9db6ff;
+--border: rgba(255,255,255,0.08);
+}
+ 
+* { box-sizing: border-box; }
+ 
+body {
+margin: 0;
+background: radial-gradient(circle at top, #162049, var(--bg) 60%);
+color: var(--text);
+font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+ 
+.wrap {
+width: min(920px, 92vw);
+margin: 0 auto;
+}
+ 
+.site-header {
+background: linear-gradient(to bottom, rgba(255,255,255,0.04), transparent);
+border-bottom: 1px solid var(--border);
+padding: 18px 0;
+}
+ 
+.site-header .wrap {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 16px;
+}
+ 
+.brand {
+color: var(--text);
+text-decoration: none;
+font-weight: 700;
+letter-spacing: 0.2px;
+font-size: 20px;
+}
+ 
+.nav a {
+color: var(--muted);
+text-decoration: none;
+margin-left: 14px;
+}
+.nav a:hover { color: var(--text); }
+ 
+.content {
+padding: 36px 0 56px;
+}
+ 
+h1, h2, h3 {
+line-height: 1.2;
+margin-top: 1.2em;
+}
+ 
+a {
+color: var(--link);
+}
+ 
+code, pre {
+font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+ 
+pre {
+padding: 14px 16px;
+background: rgba(255,255,255,0.06);
+border: 1px solid var(--border);
+border-radius: 10px;
+overflow: auto;
+}
+ 
+.post {
+background: rgba(255,255,255,0.04);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 26px 24px;
+}
+ 
+.post-title {
+margin: 0 0 6px;
+}
+ 
+.post-meta {
+color: var(--muted);
+font-size: 13px;
+}
+ 
+.sep {
+border: none;
+border-top: 1px solid var(--border);
+margin: 28px 0 18px;
+}
+ 
+.site-footer {
+border-top: 1px solid var(--border);
+padding: 22px 0 36px;
+color: var(--muted);
+font-size: 13px;
+}
